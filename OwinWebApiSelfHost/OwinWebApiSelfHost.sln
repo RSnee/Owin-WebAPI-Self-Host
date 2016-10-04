@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleVersion", "ConsoleVe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiOwinSelfHostStarter", "WebApiOwinSelfHostStarter\WebApiOwinSelfHostStarter.csproj", "{03F047BE-C71E-4B48-BCC7-A70E3600383A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbRestApi", "AbRestApi\AbRestApi.csproj", "{3CD4D3B3-18CC-4A04-8E9D-F0C8A178C950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbRestApiStarterApp", "AbRestApiStarterApp\AbRestApiStarterApp.csproj", "{A6E0BF2D-E5EE-4B53-9EF1-A6AC1737BA3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{03F047BE-C71E-4B48-BCC7-A70E3600383A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03F047BE-C71E-4B48-BCC7-A70E3600383A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03F047BE-C71E-4B48-BCC7-A70E3600383A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD4D3B3-18CC-4A04-8E9D-F0C8A178C950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD4D3B3-18CC-4A04-8E9D-F0C8A178C950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD4D3B3-18CC-4A04-8E9D-F0C8A178C950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD4D3B3-18CC-4A04-8E9D-F0C8A178C950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E0BF2D-E5EE-4B53-9EF1-A6AC1737BA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E0BF2D-E5EE-4B53-9EF1-A6AC1737BA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E0BF2D-E5EE-4B53-9EF1-A6AC1737BA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E0BF2D-E5EE-4B53-9EF1-A6AC1737BA3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
