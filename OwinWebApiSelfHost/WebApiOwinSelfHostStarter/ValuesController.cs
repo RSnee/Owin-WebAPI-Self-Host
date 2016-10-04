@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace OwinWebApiSelfHost
+namespace WebApiOwinSelfHostStarter
   {
   public class PostReturnValue
     {
@@ -16,6 +16,13 @@ namespace OwinWebApiSelfHost
 
   public class ValuesController : ApiController
     {
+    private IPostHandler PostHandler { get; set; }
+
+    public ValuesController(IPostHandler postHandler)
+      {
+      this.PostHandler = postHandler;
+      }
+
     // GET api/values 
     public IEnumerable<string> Get()
       {
@@ -25,13 +32,13 @@ namespace OwinWebApiSelfHost
     // GET api/values/5 
     public string Get(int id)
       {
-      return "value";
+      return $"value {id}";
       }
 
     // POST api/values 
     public PostReturnValue Post([FromBody]string value)
       {
-      return new PostReturnValue() { InputValue = value, Message = "Hello from Post", Ok = true };
+      return this.PostHandler.HandlePost(value);
       }
 
     // PUT api/values/5 
